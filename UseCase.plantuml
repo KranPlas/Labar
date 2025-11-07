@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Пользователь" as User
+
+package "Клиент" {
+    usecase "Регистрация в системе" as UC_Login
+    usecase "Просмотр доступных обновлений" as UC_looknew
+    usecase "Установка и удаление доступного ПО из списка" as UC_inst_uninst
+}
+
+User --> UC_Login
+User --> UC_looknew
+User --> UC_inst_uninst
+
+
+actor "Администратор" as Admin
+
+package "Система Администратора" {
+    usecase "Регистрация в системе" as A_login
+    usecase "Управление списком ПО и доступных обновлений" as A_ctrlprog
+    usecase "Просмотр списка зарегистрированных пользователей" as A_lookusers
+    usecase "Просмотр списка установленного ПО пользователей" as A_lookprog
+    usecase "Отправка уведомлений о новых обновлениях ПО" as A_sendpush
+    usecase "Добавление ПО" as A_newprog
+}
+
+Admin --> A_login
+Admin --> A_ctrlprog
+Admin --> A_lookusers
+Admin --> A_lookprog
+Admin --> A_sendpush
+Admin --> A_newprog
+@enduml
