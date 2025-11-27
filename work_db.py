@@ -1,7 +1,6 @@
 import sqlite3
 from datetime import datetime
 
-
 # Создание базы данных (файл)
 conn = sqlite3.connect('labar.db')
 cursor = conn.cursor()
