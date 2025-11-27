@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="086d33e5-3854-4275-b849-da9caf7cbddd" name="Changes" comment="- Updated README.md&#10;- Created ER.png&#10;- Updated work_db.pydb">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/ER.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/diagrams/ER.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pictures/UseCase.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/diagrams/UseCase.png" afterDir="false" />
-    </list>
+    <list default="true" id="086d33e5-3854-4275-b849-da9caf7cbddd" name="Changes" comment="Мелкие изменения" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764261223506</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Мелкие изменения">
+      <option name="closed" value="true" />
+      <created>1764261927844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764261927844</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -145,6 +148,7 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Create UseCase.plantuml" />
     <MESSAGE value="- Updated README.md&#10;- Created ER.png&#10;- Updated work_db.pydb" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Updated README.md&#10;- Created ER.png&#10;- Updated work_db.pydb" />
+    <MESSAGE value="Мелкие изменения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Мелкие изменения" />
   </component>
 </project>
