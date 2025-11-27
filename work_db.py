@@ -28,15 +28,14 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS PCs (
     pc_id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
-    inst_date TEXT NOT NULL,
     inst_place TEXT NOT NULL
 )
 ''')
 
 cursor.execute('''
-INSERT INTO PCs (name, inst_date, inst_place) 
-VALUES (?, ?, ?)
-''', ('PC-666KIR', '19.09.2013', 'C:'))
+INSERT INTO PCs (name, inst_place) 
+VALUES (?, ?)
+''', ('PC-666KIR', 'C:'))
 
 
 cursor.execute('''

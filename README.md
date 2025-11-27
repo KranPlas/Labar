@@ -33,5 +33,5 @@
 • Добавление ПО
 • Регистрация в системе
 
-##ER-диаграмма
-<img width="1284" height="686" alt="image" src="https://github.com/user-attachments/assets/e36f4032-a743-4c6a-9bd7-6e2607fcc557" />
+## ER-диаграмма
+![img.png](src/pictures/ER.png)
