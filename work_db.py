@@ -20,21 +20,22 @@ CREATE TABLE IF NOT EXISTS Users (
 cursor.execute('''
 INSERT INTO Users (name, email, role, created_at) 
 VALUES (?, ?, ?, ?)
-''', ('homyacheLLo', 'hgkfgn75fv@gmail.com', 'user', datetime.now()))
+''', ('KranPlas', 'karapuchka2007@gmail.com', 'admin', datetime.now()))
 
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS PCs (
     pc_id INTEGER PRIMARY KEY,
+    program TEXT NOT NULL,
     name TEXT NOT NULL,
     inst_place TEXT NOT NULL
 )
 ''')
 
 cursor.execute('''
-INSERT INTO PCs (name, inst_place) 
-VALUES (?, ?)
-''', ('PC-666KIR', 'C:'))
+INSERT INTO PCs (name, program, inst_place) 
+VALUES (?, ?, ?)
+''', ('PC_KranPlas', 'Steam', 'C:'))
 
 
 cursor.execute('''
@@ -51,7 +52,7 @@ CREATE TABLE IF NOT EXISTS Programs (
 cursor.execute('''
 INSERT INTO Programs (name, version, release_date, developer, category) 
 VALUES (?, ?, ?, ?, ?)
-''', ('Steam', 'Unknown', '12.09.2003', 'Valve', 'Games'))
+''', ('Steam', '1797532', '12.09.2003', 'Valve', 'Games'))
 
 # Получение данных
 cursor.execute("SELECT * FROM Users")

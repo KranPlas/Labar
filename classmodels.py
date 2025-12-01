@@ -1,9 +1,8 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
+from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
-from sqlalchemy.sql.functions import user
 from datetime import datetime
 
-# Подключение к существующей базе
+
 engine = create_engine('sqlite:///labar.db', pool_pre_ping=True)
 
 class Base(DeclarativeBase):
@@ -12,7 +11,7 @@ class Base(DeclarativeBase):
 Session = sessionmaker(bind=engine)
 session = Session()
 
-class Programs(Base): #Классы-модель
+class Programs(Base):
     __tablename__ = 'Programs'
     software_id = Column(Integer, primary_key=True)
     name = Column(String(50))
@@ -22,42 +21,40 @@ class Programs(Base): #Классы-модель
     category = Column(String(50))
 
 
-class PCs(Base): #Класс-модель
+class PCs(Base):
     __tablename__ = 'PCs'
     pc_id = Column(Integer, primary_key=True)
     program = Column(String(50))
     name = Column(String(50))
     inst_place = Column(String(50))
 
-class Users(Base): #Класс-модель
+class Users(Base):
     __tablename__ = 'Users'
     user_id = Column(Integer, primary_key=True)
-    pc = Column(String(50))
     name = Column(String(50))
     email = Column(String(50))
     role = Column(String(50))
-    created_at = Column(String(50))
+    created_at = Column(String(100))
 
 
-#CRUD
 class PCs_CRUD:
     @staticmethod
-    def print_rec_pc(): #функция для получения всех записей в таблице компьютеров
+    def print_rec_pc():
         return session.query(PCs).all()
 
     @staticmethod
-    def print_rec_id_pc(pc_id): #найти запись по айди в таблице с компьютерами
+    def print_rec_id_pc(pc_id):
         return session.query(PCs).filter(PCs.pc_id == pc_id).first()
 
     @staticmethod
-    def create_rec(name, program, inst_place): #добавить компьютер в бд
+    def create_rec_pc(name, program, inst_place):
         computer = PCs(name=name, program=program, inst_place=inst_place)
         session.add(computer)
         session.commit()
         return computer
 
     @staticmethod
-    def del_rec(computer_id): #удалить компьютер из бд
+    def del_rec(computer_id):
         computer = PCs_CRUD.print_rec_id_pc(computer_id)
         if computer:
             session.delete(computer)
@@ -75,15 +72,15 @@ class Users_CRUD:
         return session.query(Users).filter(Users.user_id == user_id).first()
 
     @staticmethod
-    def create_rec(name, pc, email, role): #добавить компьютер в бд
-        user = Users(name=name, pc=pc , email=email, role=role, created_at=datetime.now())
+    def create_rec_user(name, email, role):
+        user = Users(name=name, email=email, role=role, created_at=datetime.now())
         session.add(user)
         session.commit()
         return user
 
     @staticmethod
     def del_rec_user(user_id):
-        user = PCs_CRUD.print_rec_id_pc(user_id)
+        user = Users_CRUD.print_rec_id_user(user_id)
         if user:
             session.delete(user)
             session.commit()
@@ -112,7 +109,6 @@ class Programs_CRUD:
             session.commit()
 
 
-#Сервис, чтобы работать со связ-ми данными из неск-х таблиц
 class work_with_tables:
     @staticmethod
     def join_sql():
@@ -121,41 +117,36 @@ class work_with_tables:
             Programs, PCs.program == Programs.software_id)
 
     @staticmethod
-    def find_prog_on_pc(name_program): #для нахождения компьютера с определенным по
+    def find_prog_on_pc(name_program):
         return session.query(PCs).join(Programs).filter(Programs.software_id == name_program).all()
 
 with session as session:
-    print('all pcs')
+
+    new_user = Users_CRUD.create_rec_user("You", 'youremail@mail.com', "user")
+    print('Добавлен новый пользователь!')
+    print(f"Данные пользователя \n Id: {new_user.user_id} \n Name: {new_user.name} \n Email: {new_user.email} \n Role: {new_user.role}")
+
+    print('\n===all pcs===\n')
     computers = PCs_CRUD.print_rec_pc()
-    #for comp in computers:
-     #   print(f"Id: {comp.pc_id}, {comp.program}, {comp.name}")
-
-#краш-тест
-'''
-if __name__ == "__main__":
-    print("Все компьютеры ")
-    computers = ComputerCRUID.records() #да-да та самая функция, которая выводит вапще всё
     for comp in computers:
-        print(f"ID: {comp.id_pc}, Email: {comp.Email}, PO ID: {comp.id_proga}")
+        print(f"Id: {comp.pc_id}, {comp.program}, {comp.name}")
 
-    new_comp = ComputerCRUID.createrecord("crashtest@example.com", 1) #внедряю тестовую запись
-    print(f"\nДобавлен компьютер с ID: {new_comp.id_pc}")
-    ComputerCRUID.change_email(new_comp.id_pc, "crashtestnew@example.com")#а затем обновляю её
+    print('\n===all users===\n')
+    users = Users_CRUD.print_rec_user()
+    for us in users:
+        print(f"Id: {us.user_id}, {us.name}, {us.email}, {us.role}, {us.created_at}")
 
+    print('\n===all programs===\n')
+    programs = Programs_CRUD.print_rec_prog()
+    for prog in programs:
+        print(f"Id: {prog.software_id}, {prog.name}, {prog.version}, {prog.developer}, {prog.category}")
 
-    print("\nВся таблица")
-    resultat = ServiceTableData.join_sql()
-    print("ID | Почта | ПО | Цена")
-    for id_pc, email, proga, price in resultat:
-        print(f"{id_pc} | {email} | {proga} | {price}")
+    Users_CRUD.del_rec_user(4)
+    print('\nУдален пользователь!')
 
-    print("\nВывод пк с visual studio (для теста)")
-    vs_pc = ServiceTableData.find_pc_po("Visual Studio")
-    for j in vs_pc:
-        print(f"ID: {j.id_pc}, Email: {j.Email}")
-
-    ComputerCRUID.deleterecord(new_comp.id_pc) #тестовый компьютер пака(удаляю)
-    print(f"\nУдален компьютер с ID: {new_comp.id_pc}")
+    print('\n===all users===\n')
+    users = Users_CRUD.print_rec_user()
+    for us in users:
+        print(f"Id: {us.user_id}, {us.name}, {us.email}, {us.role}, {us.created_at}")
 
     session.close()
-'''
