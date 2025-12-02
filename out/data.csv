@@ -1,6 +1,4 @@
 ﻿ID;Name;User;Programs;Inst Place
-1;KranPlas;PCKranPlas;C:\Program Files;
-2;StartP;Desktop-KF74FG;C:\Program Files ;
-3;PC;PC-666KIR;C:\Program Files (x86);
-
-
+1;PCKranPlas;KranPlas;Steam;C:\Program Files
+2;Desktop-KF74FG;StartP;VLC Media Player;C:\Program Files 
+3;PC-666KIR;PC;Visual Studio;C:\Program Files (x86)

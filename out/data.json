@@ -1,20 +1,24 @@
 [
   {
     "id": 1,
-    "name": "KranPlas",
-    "user": "PCKranPlas",
+    "name": "PCKranPlas",
+    "user": "KranPlas",
+    "program": "Steam",
     "inst_place": "C:\\Program Files"
   },
   {
     "id": 2,
-    "name": "StartP",
-    "user": "Desktop-KF74FG",
+    "name": "Desktop-KF74FG",
+    "user": "StartP",
+    "program": "VLC Media Player",
     "inst_place": "C:\\Program Files "
   },
   {
     "id": 3,
-    "name": "PC",
-    "user": "PC-666KIR",
+    "name": "PC-666KIR",
+    "user": "PC",
+    "program": "Visual Studio",
     "inst_place": "C:\\Program Files (x86)"
   }
 ]
+

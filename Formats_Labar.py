@@ -8,8 +8,9 @@ cursor = connection.cursor()
 cursor.execute('''
     SELECT 
         PCs.pc_id,
-        PCs.user,
         PCs.name,
+        PCs.user,
+        PCs.program,
         PCs.inst_place,
         Users.name,
         Programs.name
