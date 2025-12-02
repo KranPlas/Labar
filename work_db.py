@@ -27,15 +27,16 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS PCs (
     pc_id INTEGER PRIMARY KEY,
     program TEXT NOT NULL,
+    user TEXT NOT NULL,
     name TEXT NOT NULL,
     inst_place TEXT NOT NULL
 )
 ''')
 
 cursor.execute('''
-INSERT INTO PCs (name, program, inst_place) 
-VALUES (?, ?, ?)
-''', ('PC_KranPlas', 'Steam', 'C:'))
+INSERT INTO PCs (name, program, user, inst_place) 
+VALUES (?, ?, ?, ?)
+''', ('PCKranPlas', 'Steam', 'KranPlas' ,'C:\Program Files'))
 
 
 cursor.execute('''

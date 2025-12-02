@@ -25,6 +25,7 @@ class PCs(Base):
     __tablename__ = 'PCs'
     pc_id = Column(Integer, primary_key=True)
     program = Column(String(50))
+    user = Column(String(50))
     name = Column(String(50))
     inst_place = Column(String(50))
 
@@ -47,8 +48,8 @@ class PCs_CRUD:
         return session.query(PCs).filter(PCs.pc_id == pc_id).first()
 
     @staticmethod
-    def create_rec_pc(name, program, inst_place):
-        computer = PCs(name=name, program=program, inst_place=inst_place)
+    def create_rec_pc(name, program, user, inst_place):
+        computer = PCs(name=name, program=program, user=user, inst_place=inst_place)
         session.add(computer)
         session.commit()
         return computer
@@ -108,18 +109,6 @@ class Programs_CRUD:
             session.delete(program)
             session.commit()
 
-
-class work_with_tables:
-    @staticmethod
-    def join_sql():
-        return session.query(
-            PCs.pc_id, PCs.name, Programs.name).join(
-            Programs, PCs.program == Programs.software_id)
-
-    @staticmethod
-    def find_prog_on_pc(name_program):
-        return session.query(PCs).join(Programs).filter(Programs.software_id == name_program).all()
-
 with session as session:
 
     new_user = Users_CRUD.create_rec_user("You", 'youremail@mail.com', "user")
@@ -129,7 +118,7 @@ with session as session:
     print('\n===all pcs===\n')
     computers = PCs_CRUD.print_rec_pc()
     for comp in computers:
-        print(f"Id: {comp.pc_id}, {comp.program}, {comp.name}")
+        print(f"Id: {comp.pc_id}, {comp.program}, {comp.user}, {comp.name}")
 
     print('\n===all users===\n')
     users = Users_CRUD.print_rec_user()
