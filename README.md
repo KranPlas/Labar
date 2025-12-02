@@ -34,4 +34,4 @@
 • Регистрация в системе  
 
 ## ER-диаграмма
-![img.png](src/docs/diagrams/ER.png)
+![img.png](src/docs/diagrams/img.png)

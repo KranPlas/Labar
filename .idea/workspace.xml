@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="086d33e5-3854-4275-b849-da9caf7cbddd" name="Changes" comment="- Небольшие изменения для 4й лабы">
-      <change afterPath="$PROJECT_DIR$/Formats_Labar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="086d33e5-3854-4275-b849-da9caf7cbddd" name="Changes" comment="- Сделана 5я лаба 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -262,7 +259,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764654017895</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Сделана 5я лаба">
+      <option name="closed" value="true" />
+      <created>1764656813848</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764656813848</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- Сделана 5я лаба 2">
+      <option name="closed" value="true" />
+      <created>1764656825113</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1764656825113</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -287,6 +300,8 @@
     <MESSAGE value="- Изменена ER-диаграмма&#10;- Созданы классы-модели&#10;- удалены лишние файлы" />
     <MESSAGE value="- Большие изменения для 4й лабы" />
     <MESSAGE value="- Небольшие изменения для 4й лабы" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Небольшие изменения для 4й лабы" />
+    <MESSAGE value="- Сделана 5я лаба" />
+    <MESSAGE value="- Сделана 5я лаба 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Сделана 5я лаба 2" />
   </component>
 </project>
