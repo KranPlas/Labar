@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Users (
     name TEXT NOT NULL,
     email TEXT NOT NULL,
     role TEXT NOT NULL,
-    created_at TEXT NOT NULL
+    created_at TEXT NOT NULL                                                    
 )
 ''')
 

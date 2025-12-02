@@ -5,8 +5,7 @@
     <name>KranPlas</name>
     <user>PCKranPlas</user>
     <software>
-        <program>C:\Program Files</program>
-        <inst_place>None</inst_place>
+        <inst_place>C:\Program Files</inst_place>
     </software>
   </pcs>
   <pcs>
@@ -14,8 +13,7 @@
     <name>StartP</name>
     <user>Desktop-KF74FG</user>
     <software>
-        <program>C:\Program Files </program>
-        <inst_place>None</inst_place>
+        <inst_place>C:\Program Files</inst_place>
     </software>
   </pcs>
   <pcs>
@@ -23,8 +21,8 @@
     <name>PC</name>
     <user>PC-666KIR</user>
     <software>
-        <program>C:\Program Files (x86)</program>
-        <inst_place>None</inst_place>
+        <inst_place>C:\Program Files (x86)</inst_place>
     </software>
   </pcs>
 </PCs>
+

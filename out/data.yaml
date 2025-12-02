@@ -2,17 +2,14 @@
   name: KranPlas
   user: PCKranPlas
   software:
-    program: C:\Program Files
-    inst_place: None
+    inst_place: C:\Program Files
 - id: 2
   name: StartP
   user: Desktop-KF74FG
   software:
-    program: C:\Program Files 
-    inst_place: None
+    inst_place: C:\Program Files
 - id: 3
   name: PC
   user: PC-666KIR
   software:
-    program: C:\Program Files (x86)
-    inst_place: None
+    inst_place: C:\Program Files (x86)

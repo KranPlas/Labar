@@ -3,21 +3,18 @@
     "id": 1,
     "name": "KranPlas",
     "user": "PCKranPlas",
-    "program": "C:\\Program Files",
-    "inst_place": null
+    "inst_place": "C:\\Program Files"
   },
   {
     "id": 2,
     "name": "StartP",
     "user": "Desktop-KF74FG",
-    "program": "C:\\Program Files ",
-    "inst_place": null
+    "inst_place": "C:\\Program Files "
   },
   {
     "id": 3,
     "name": "PC",
     "user": "PC-666KIR",
-    "program": "C:\\Program Files (x86)",
-    "inst_place": null
+    "inst_place": "C:\\Program Files (x86)"
   }
 ]
