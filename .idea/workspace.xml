@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="086d33e5-3854-4275-b849-da9caf7cbddd" name="Changes" comment="- Большие изменения для 4й лабы">
+    <list default="true" id="086d33e5-3854-4275-b849-da9caf7cbddd" name="Changes" comment="- Небольшие изменения для 4й лабы">
+      <change afterPath="$PROJECT_DIR$/Formats_Labar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classmodels.py" beforeDir="false" afterPath="$PROJECT_DIR$/classmodels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labar.db" beforeDir="false" afterPath="$PROJECT_DIR$/labar.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/work_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,19 +70,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.classmodels.executor&quot;: &quot;Run&quot;,
-    &quot;Python.labar_main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.work_db.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Formats_Labar.executor": "Run",
+    "Python.classmodels.executor": "Run",
+    "Python.labar_main.executor": "Run",
+    "Python.work_db.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\KranPlas\PycharmProjects\Labar\src\docs\diagrams" />
@@ -93,7 +92,29 @@
       <recent name="C:\Users\KranPlas\PycharmProjects\Labar\src\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.classmodels">
+  <component name="RunManager" selected="Python.Formats_Labar">
+    <configuration name="Formats_Labar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Labar" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Formats_Labar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="classmodels" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Labar" />
       <option name="ENV_FILES" value="" />
@@ -140,6 +161,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Formats_Labar" />
         <item itemvalue="Python.classmodels" />
         <item itemvalue="Python.work_db" />
       </list>
@@ -232,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764613164063</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- Небольшие изменения для 4й лабы">
+      <option name="closed" value="true" />
+      <created>1764654017895</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1764654017895</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -256,6 +286,7 @@
     <MESSAGE value="Мелкие изменения" />
     <MESSAGE value="- Изменена ER-диаграмма&#10;- Созданы классы-модели&#10;- удалены лишние файлы" />
     <MESSAGE value="- Большие изменения для 4й лабы" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Большие изменения для 4й лабы" />
+    <MESSAGE value="- Небольшие изменения для 4й лабы" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Небольшие изменения для 4й лабы" />
   </component>
 </project>
