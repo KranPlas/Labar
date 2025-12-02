@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCs>
+  <pcs>
+    <id>1</id>
+    <name>KranPlas</name>
+    <user>PCKranPlas</user>
+    <software>
+        <program>C:\Program Files</program>
+        <inst_place>None</inst_place>
+    </software>
+  </pcs>
+  <pcs>
+    <id>2</id>
+    <name>StartP</name>
+    <user>Desktop-KF74FG</user>
+    <software>
+        <program>C:\Program Files </program>
+        <inst_place>None</inst_place>
+    </software>
+  </pcs>
+  <pcs>
+    <id>3</id>
+    <name>PC</name>
+    <user>PC-666KIR</user>
+    <software>
+        <program>C:\Program Files (x86)</program>
+        <inst_place>None</inst_place>
+    </software>
+  </pcs>
+</PCs>

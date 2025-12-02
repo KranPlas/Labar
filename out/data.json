@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "KranPlas",
+    "user": "PCKranPlas",
+    "program": "C:\\Program Files",
+    "inst_place": null
+  },
+  {
+    "id": 2,
+    "name": "StartP",
+    "user": "Desktop-KF74FG",
+    "program": "C:\\Program Files ",
+    "inst_place": null
+  },
+  {
+    "id": 3,
+    "name": "PC",
+    "user": "PC-666KIR",
+    "program": "C:\\Program Files (x86)",
+    "inst_place": null
+  }
+]
